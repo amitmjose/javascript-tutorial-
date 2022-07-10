@@ -224,4 +224,11 @@
 // document.write (myString)
 
 
-var myArray 
+var mycar  = new  Object();
+ mycar.speed = 50;
+ mycar.color = 'red';
+ mycar.drive = function(){
+    document.write("now driving");
+};
+ 
+document.write(mycar.drive());
