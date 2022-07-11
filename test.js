@@ -224,11 +224,193 @@
 // document.write (myString)
 
 
-var mycar  = new  Object();
- mycar.speed = 50;
- mycar.color = 'red';
- mycar.drive = function(){
-    document.write("now driving");
-};
+// var mycar  = new  Object();
+//  mycar.speed = 50;
+//  mycar.color = 'red';
+//  console.log(mycar.speed);
+//  mycar.drive = function(a){
+//     document.write("now driving" + a);
+//     console.log("now driving" + a);
+// };
+
+// mycar.drive();
+// document.write(mycar.drive("fast"));
+
+
+// var myCar2 = {
+//     maxSpeed: 50 , 
+//     driver : "kuttu" , 
+//     drive : function(){
+//         console.log("now driving");
+//     } , 
+//     distance : function(speed , time){
+//         console.log("distance travelled : " + speed*time);
+//     }
+// };
+
+// console.log(myCar2.maxSpeed);
+// myCar2.drive();
+// myCar2.distance(50 , 20);
+
+
+
+
+// // this keyword
+
+
+
+// var myCar = {
+//     maxSpeed: 30 , 
+//     driver : "kuttu" , 
+//     driverName : function (){
+//         console.log("name is " + this.driver);
+//     }
+// };
+
+// var myCar2 = {
+//     maxSpeed: 50 , 
+//     driver : "daku" , 
+//     driverName : function (){
+//         console.log("name is " + this.driver);
+//     }
+// };
+
+
+// myCar2.driverName();
+// myCar.driverName();
  
-document.write(mycar.drive());
+
+// // Constructor Function
+
+
+// var myString = new String();
+
+// var Car = function(maxSpeed, driver) {
+    
+//     this.maxSpeed = maxSpeed;
+//     this.driver = driver;
+//     this.drive = function( speed , time){
+//         console.log(speed*time);
+//     };
+//     this.logDriver = function(){
+//         console.log("driver name is "+ this.driver);
+//     };
+// } 
+// var myCar = new Car(50 , "suku");
+// var myCar2 = new Car(5 , "lkfsx");
+// var myCar3 = new Car(75 , "sshrg");
+
+
+// myCar.drive(30 , 5);
+// myCar3.logDriver();
+
+
+
+// // Date object
+
+// var myDate = new Date();
+// console.log(myDate);
+
+
+// var oldDate = new Date(1789 , 10 , 20);
+// var newDate = new Date(1999 , 10 , 20);
+// console.log( oldDate , newDate  )
+
+// var birthday = new Date(1986 , 0 , 15 , 11 , 15 , 25);
+// var birthday2 = new Date(1986 , 0 , 15 , 11 , 15 , 25);
+
+// console.log(birthday.getMonth());
+// //month of the date (0-11)
+
+// console.log(birthday.getFullYear());
+// //year(YYYY)
+
+// console.log(birthday.getDate());
+// //date of month (1-31)
+
+// console.log(birthday.getDay());
+// // day of week (0-6)
+
+// console.log(birthday.getHours());
+// //hour of the date (0-23)
+
+// console.log(birthday.getTime());
+// //no. of milliseconds since 1st jan 1970
+
+
+
+// if (birthday == birthday2){
+//     console.log("bithdays are equal");
+// } else{
+//     console.log("birthdays are not equal");
+// }
+// //not equal bcoz both are different objects
+
+// if (birthday.getTime() == birthday2.getTime()){
+//     console.log("bithdays are equal");
+// } else{
+//     console.log("birthdays are not equal");
+// }
+// // equal bcoz getTime() outs value
+
+
+//DOM
+
+//Document Object Model   
+
+// document.getElementsByClassName("content");
+// //creates an array of all elements with class name : content
+
+// var myContentDivs = document.getElementsByClassName("content");
+
+// console.log(myContentDivs);
+// document.write(myContentDivs);
+
+// var myH2 = myContentDivs[0].getElementsByTagName("h2");
+// console.log (myH2);
+
+// myH2[0].innerHTML = "yeeaa";
+
+// var myID = document.getElementById("link");
+// console.log(myID);
+
+// var myBody = document.getElementsByClassName("page-body");
+
+// console.log(myBody);
+// myBody[0].innerHTML = "<p> helo </p>";
+
+// var myTitle = document.getElementById("tuto");
+
+// console.log(myTitle);
+
+// console.log(myTitle.textContent);
+
+// myTitle.textContent = "changed using DOM";
+
+// console.log(myTitle.textContent);
+
+
+
+// changing element attributes
+
+// var link = document.getElementById("test");
+
+// console.log(link);
+// console.log(link.getAttribute("href"));
+
+// console.log(link.getAttribute("class"));
+
+// console.log(link.setAttribute("class" , "pie"));
+
+// console.log(link.setAttribute("alt" , "hello"));
+
+// console.log(link.className);
+
+// console.log(link.className = "nionja");
+
+// console.log(link.href);
+
+// console.log(link.style);
+
+
+
