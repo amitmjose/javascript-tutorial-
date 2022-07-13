@@ -412,5 +412,14 @@
 
 // console.log(link.style);
 
-jfhjffhkg,lok
 
+// //changing styles 
+
+
+// var link = document.getElementById("tuto");
+
+// link.setAttribute("style" ,"color: red;");
+// link.style.color = "green";
+// link.style.marginLeft = "30px";
+// link.style.backgroundColor = "red";
+// link.style.height = "50px";
