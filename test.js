@@ -423,3 +423,106 @@
 // link.style.marginLeft = "30px";
 // link.style.backgroundColor = "red";
 // link.style.height = "50px";
+
+
+
+
+// //adding elements to DOM
+
+// var newLi = document.createElement("li");
+
+// console.log(newLi);
+
+// var newA = document.createElement("a");
+
+// console.log(newA);
+
+// var menu = document.getElementById("page").getElementsByTagName("ul")[0];
+
+// console.log(menu);
+
+// menu.appendChild(newLi);
+
+// newLi.appendChild(newA);
+
+// newA.innerHTML = "ntheeee";
+
+// menu.insertBefore(newLi , menu.getElementsByTagName("li")[0]);
+
+// menu.insertBefore(newLi , menu.getElementsByTagName("li")[2]);
+
+
+
+
+// //removing elements from dom 
+
+// var parent = document.getElementById("page").getElementsByTagName("ul")[0];
+
+// console.log(parent);
+
+// var child = parent.getElementsByTagName("li")[0];
+
+// console.log(child);
+// var removed = parent.removeChild(child);
+
+// parent.appendChild(removed);
+
+
+
+
+//Events
+
+
+
+// // alert("hey");
+
+// var title = document.getElementById("tuto");
+
+// title.onclick = function(){
+//     alert("you clicked me");
+// }
+// title.onmouseover = function(){
+//     alert("you hovered me");
+// }
+
+
+
+// //window onload - when <script> is in <head>
+
+// window.onload = function(){
+
+//     //js codes
+
+// }
+
+
+//      //OR
+
+
+// function setUpEvents(){
+
+//     //js codes
+
+// }
+
+// window.onload = function(){
+
+//     setUpEvents();
+
+// }
+
+
+
+
+// JS timers
+
+
+var myMessage = document.getElementById("tuto");
+
+function showMessage(){
+
+    myMessage.className = "show";
+
+}
+
+setTimeout(showMessage, 3000);
