@@ -526,3 +526,29 @@ function showMessage(){
 }
 
 setTimeout(showMessage, 3000);
+
+
+
+var colourChanger = document.getElementById("jsh");
+var colours = ["violet" , "indigo" , "blue" , "green" , "yellow" , "orange" , "red"];
+var counter = 0;
+
+function changeColour(){
+
+    if (counter >= colours.length){
+        counter = 0;
+    }
+
+    colourChanger.style.background = colours[counter];
+    counter++;
+
+}
+
+var myTimer = setInterval(changeColour , 1000);
+
+colourChanger.onclick = function(){
+
+    clearInterval(myTimer);
+    colourChanger.innerHTML = "mathi kalicahth";
+    
+};
